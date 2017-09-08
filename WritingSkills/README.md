@@ -11,7 +11,6 @@ For more please check out my blog on [Medium](https://medium.com/@aleksandrakoro
 * Allowing user to choose exam type and stopping frm typing wrong input: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*lmMxZ6XcErPeCzteSCNh2Q.png)  <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*Y1CXEufQjjvnx0gFP8nBHA.png)  <br />
-<br />
 * Instructions depending on the exam: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*pnXe3_SlzGgM-5F99Qi33g.png) <br />
 <br />
