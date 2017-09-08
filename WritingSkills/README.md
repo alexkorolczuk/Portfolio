@@ -16,5 +16,6 @@ For more please check out my blog on [Medium](https://medium.com/@aleksandrakoro
 <br />
 * Counting words, sencences, paragraphs and time: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*qkKQHk9gzn7GwaOGX799bg.png) <br />
+<br />
 ## Ongoing 
 Adding new feature: counting special expressions, required to write high scored English text. 
