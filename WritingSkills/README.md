@@ -13,7 +13,7 @@ For more please check out my blog on [Medium](https://medium.com/@aleksandrakoro
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*Y1CXEufQjjvnx0gFP8nBHA.png)  <br />
 * Instructions depending on the exam: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*pnXe3_SlzGgM-5F99Qi33g.png) <br />
-* Counting words, sencences, paragraphs and time: <br />
+* Counting words, sencences, paragraphs, special expressions and time: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*qkKQHk9gzn7GwaOGX799bg.png) <br />
 ## Ongoing 
-Adding new feature: counting special expressions, required to write high scored English text. 
+Adding new feature: counting special expressions, required to write high scored English text. - DONE 
