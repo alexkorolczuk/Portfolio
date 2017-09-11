@@ -14,6 +14,6 @@ For more please check out my blog on [Medium](https://medium.com/@aleksandrakoro
 * Instructions depending on the exam: <br />
 ![Alt text](https://cdn-images-1.medium.com/max/800/1*pnXe3_SlzGgM-5F99Qi33g.png) <br />
 * Counting words, sencences, paragraphs, special expressions and time: <br />
-![Alt text](https://cdn-images-1.medium.com/max/800/1*qkKQHk9gzn7GwaOGX799bg.png) <br />
+![Alt text](https://cdn-images-1.medium.com/max/800/1*Y7w-J4QBiCTAr8spk-SMUw.png) <br />
 ## Ongoing 
 Adding new feature: counting special expressions, required to write high scored English text. - DONE 

@@ -7,8 +7,10 @@
 //
 
 #include <time.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "Result.h"
 #include "UserInput.h"
@@ -35,7 +37,6 @@ void analizeText(time_t start, int option){
 
     
     //--------------------count word, sentences--------------------:
-    
   
     for (i = 0; task[i] != '\0';i++){
         if(task[i] == ' ' || task[i] == '\t')
@@ -46,7 +47,9 @@ void analizeText(time_t start, int option){
         }
         if( task[i] == '.' || task[i] == '!'  || task[i] == '?')
             sentences++;
+        
     }
+    
     
     if (strstr(task, "...") != NULL) {
         sentences = sentences - 2;
@@ -59,14 +62,12 @@ void analizeText(time_t start, int option){
     
     
     //--------------------count special expressions:--------------------:
-
-    for(i=0;i<=11;i++){
+    for(i=0;i<=13;i++){
         if (strstr(task, (expressions[i]) ) != NULL)
             special_exp++;
-    }
+   }
     output(words-1, sentences, paragraph, special_exp, seconds, option);
 }
-
 
 
 
@@ -77,12 +78,12 @@ void output(int number_words, int sentences, int paragraph, int special_exp, int
         if (number_words > 150)
             words = "You exceeded the limit of words.\nBe careful next time.";
         else if (number_words < 120)
-            words = "Your task has less than 120 words.\nTry to be closer to the limit of 150 words.";
+            words = "Your task has less than 120 words.\nTry to be closer to the limit of 150 words";
         else
             words = "Good job!";
     } else {
         if (number_words > 250)
-            words = "You crossed the limit of 250 words. Be careful next time.";
+            words = "You crossed the limit of 250 words. Be careful next time";
         else if (number_words < 220)
             words = "Your task has less than 220 words.\nTry to be closer to the limit of 250 words.";
         else
@@ -92,10 +93,10 @@ void output(int number_words, int sentences, int paragraph, int special_exp, int
     printf("\n");
     printf("---------------------RESULTS-----------------------\n");
     printf("\n");
-    printf("NUMBER OF WORDS: %d %s.\n", number_words, words);
+    printf("NUMBER OF WORDS: %d. %s.\n", number_words, words);
     printf("NUMBER OF SENTENCES: %d\n", sentences);
     printf("NUMBER OF PARAGRAPHS: %d\n", paragraph);
-    printf("NUMBER OF SPECIAL EXPRESSIONS: %d\n", special_exp);
+    printf("NUMBER OF USED SPECIAL EXPRESSIONS: %d \n", special_exp);
 
     if (seconds > 60.0){
         int minutes = seconds / 60;
