@@ -24,15 +24,15 @@ void analizeText(time_t start, int option){
     printf("----------------START WRITING NOW------------------\n");
     int words = 0, sentences = 0, paragraph = 0, i;
     char task[10000];
-    //char * single_word;
     scanf("%[^'#']",task);
     time_t end;
+    char *expressions[13] = {"Firstly", "Secondly", "Thirdly", "However", "however", "Moreover", "moreover", "Nevertheless", "therefore", "Therefore", "Nonetheless", "Importantly", "importantly"};
+    int special_exp = 0;
     
     //--------------------time----------------------------------:
     time(&end);
     int seconds = difftime(end, start);
-    
-    
+
     
     //--------------------count word, sentences--------------------:
     
@@ -48,7 +48,6 @@ void analizeText(time_t start, int option){
             sentences++;
     }
     
-    
     if (strstr(task, "...") != NULL) {
         sentences = sentences - 2;
     }
@@ -57,11 +56,21 @@ void analizeText(time_t start, int option){
     }
     if (strstr(task, "  ") != NULL)
         words= words-1;
+    
+    
+    //--------------------count special expressions:--------------------:
 
-    output(words-1, sentences, paragraph , seconds, option);
+    for(i=0;i<=11;i++){
+        if (strstr(task, (expressions[i]) ) != NULL)
+            special_exp++;
+    }
+    output(words-1, sentences, paragraph, special_exp, seconds, option);
 }
 
-void output(int number_words, int sentences, int paragraph, int seconds, int option) {
+
+
+
+void output(int number_words, int sentences, int paragraph, int special_exp, int seconds, int option) {
     
     char * words;
     if (option == 1 || option == 2){
@@ -86,6 +95,8 @@ void output(int number_words, int sentences, int paragraph, int seconds, int opt
     printf("NUMBER OF WORDS: %d %s.\n", number_words, words);
     printf("NUMBER OF SENTENCES: %d\n", sentences);
     printf("NUMBER OF PARAGRAPHS: %d\n", paragraph);
+    printf("NUMBER OF SPECIAL EXPRESSIONS: %d\n", special_exp);
+
     if (seconds > 60.0){
         int minutes = seconds / 60;
         int remaining_secods = (int) seconds % 60;

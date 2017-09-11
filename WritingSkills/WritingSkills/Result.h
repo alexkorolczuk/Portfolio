@@ -14,10 +14,7 @@
 
 
 void analizeText(time_t, int);
-void output(int number_words, int sentences, int special_exp, int seconds, int option);
+void output(int number_words, int sentences, int paragraph,int special_exp, int seconds, int option);
 
 #endif /* Result_h */
 
-
-// counter as you type
-// 

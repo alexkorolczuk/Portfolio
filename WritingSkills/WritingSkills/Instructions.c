@@ -40,6 +40,7 @@ void showInstructions(int option) {
         printf("Writing section during a real exam has 2 scored tasks.\nIt should take 53 min to accoplish bot of them.\nNow you goning to write just one of them. \nYou've got 25 minutes to submit the file.\n");
         printf("\n");
         printf("WORDS: Your limit is %d words.\n", words_limit);
+        printf("SPECIAL EXPRESSIONS: We are going to count how many special expressions you used from: firstly, secondly, thirdly, moreover, however, nevertheless, therefore, nontheless, importantly.\n");
         printf("TIME: Our program will mesure the time for you from\nthe moment you are ready to write, until you submit\nyour task.\n");
         printf("SUBMIT THE FILE: Type # when you finished.\n");
     
