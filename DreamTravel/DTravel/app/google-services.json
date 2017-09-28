@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "884347742010",
+    "project_id": "firebase-dtravel"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884347742010:android:676a024d2f923b5d",
+        "android_client_info": {
+          "package_name": "com.example.aleksandrakorolczuk1.dtravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884347742010-sjait7ppmqr1v04d56gh0ct4o0e8ms3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aleksandrakorolczuk1.dtravel",
+            "certificate_hash": "17d7686148872b6ea8afe11cc7a2451553842e2f"
+          }
+        },
+        {
+          "client_id": "884347742010-fglatf42q6h2f4g9ohtdkqma29t1gntg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8AusFqCQph4TfcR5q6hoh4HPRG1lzEZo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

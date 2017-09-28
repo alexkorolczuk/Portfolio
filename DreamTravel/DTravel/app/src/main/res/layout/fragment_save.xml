@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+    android:id="@+id/fragment_save_id"
+        android:background="@drawable/pagelist">
+
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Your goal is:"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.174"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"
+            android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/your_title"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="97dp"
+        android:text="@string/addgoal"
+        android:textSize="40sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="20dp"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.462"
+            android:layout_marginTop="32dp">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:layout_editor_absoluteY="86dp"
+            tools:layout_editor_absoluteX="8dp">
+
+
+        <TextView
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:text="More work"
+            android:textSize="24sp"
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="48dp"
+            tools:layout_conversion_absoluteWidth="242dp"
+            tools:layout_conversion_absoluteHeight="42dp"
+            tools:layout_editor_absoluteY="48dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <EditText
+            android:id="@+id/work"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:gravity="right"
+            tools:layout_conversion_absoluteX="242dp"
+            tools:layout_conversion_absoluteY="48dp"
+            tools:layout_conversion_absoluteWidth="109dp"
+            tools:layout_conversion_absoluteHeight="42dp"
+            tools:layout_editor_absoluteY="48dp"
+            tools:layout_editor_absoluteX="242dp" />
+</TableRow>
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selling things"
+                android:textSize="24sp"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="242dp"
+                tools:layout_conversion_absoluteX="0dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="90dp" />
+
+            <EditText
+                android:id="@+id/selling"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="number"
+                android:hint="0"
+                tools:layout_conversion_absoluteHeight="42dp"
+                tools:layout_conversion_absoluteWidth="109dp"
+                tools:layout_conversion_absoluteX="242dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="90dp" />
+        </TableRow>
+
+<TableRow
+    android:layout_height="0dp"
+    android:layout_width="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:text="Shopping less"
+            android:textSize="24sp"
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="133dp"
+            tools:layout_conversion_absoluteWidth="242dp"
+            tools:layout_conversion_absoluteHeight="42dp"
+            tools:layout_editor_absoluteY="133dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <EditText
+            android:id="@+id/shopping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="right"
+            android:hint="0"
+            tools:layout_conversion_absoluteX="242dp"
+            tools:layout_conversion_absoluteY="133dp"
+            tools:layout_conversion_absoluteWidth="109dp"
+            tools:layout_conversion_absoluteHeight="42dp"
+            tools:layout_editor_absoluteY="133dp"
+            tools:layout_editor_absoluteX="246dp" />
+
+</TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                tools:layout_editor_absoluteY="81dp"
+                tools:layout_editor_absoluteX="0dp">
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:text="Loan"
+                    android:textSize="24sp"
+                    tools:layout_conversion_absoluteX="0dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="242dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <EditText
+                    android:id="@+id/loan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:hint="0"
+                    tools:layout_conversion_absoluteX="242dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="109dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="246dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                tools:layout_editor_absoluteY="81dp"
+                tools:layout_editor_absoluteX="0dp">
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cut down bills"
+                    android:textSize="24sp"
+                    tools:layout_conversion_absoluteX="0dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="242dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <EditText
+                    android:id="@+id/bills"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:hint="0"
+                    tools:layout_conversion_absoluteX="242dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="109dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="246dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                tools:layout_editor_absoluteY="81dp"
+                tools:layout_editor_absoluteX="0dp">
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="24sp"
+                    tools:layout_conversion_absoluteX="0dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="242dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <EditText
+                    android:id="@+id/other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:hint="0"
+                    tools:layout_conversion_absoluteX="242dp"
+                    tools:layout_conversion_absoluteY="133dp"
+                    tools:layout_conversion_absoluteWidth="109dp"
+                    tools:layout_conversion_absoluteHeight="42dp"
+                    tools:layout_editor_absoluteY="133dp"
+                    tools:layout_editor_absoluteX="246dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/calculate"
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="83dp" />
+
+
+    <Button
+        android:id="@+id/need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="89dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Need"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.175" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+

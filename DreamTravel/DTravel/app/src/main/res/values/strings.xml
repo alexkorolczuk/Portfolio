@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DTravel</string>
+    <string name="facebook_app_id">254414235047525</string>
+    <string name="fb_login_protocol_scheme">fb254414235047525</string>
+    <string name="welcome_to">Welcome to </string>
+    <string name="dreamtravel">Dream: Travel</string>
+    <string name="what_is_your">What is your goal?</string>
+    <string name="startdreaming">Start dreaming...</string>
+    <string name="yourdreams">Your dreams </string>
+    <string name="budget">Budget: </string>
+    <string name="addgoal">Add travel goal </string>
+    <string name="start_saving">Start saving</string>
+    <string name="calculate">Calculate</string>
+    <string name="delete">Delete</string>
+    <string name="backbutton">&lt;&lt; --- </string>
+    <string name="need">You still need: </string>
+    <string name="disconnect">Disconnected</string>
+    <string name="sign_out">Sign out</string>
+    <string name="signed_out">Signed out</string>
+    <string name="loading">Loading</string>
+    <string name="signed_in_fmt">Signed it</string>
+
+
+</resources>

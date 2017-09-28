@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <!--<item name="colorPrimary">@color/primary</item>-->
+            <item name="colorPrimary">@android:color/transparent</item>
+            <item name="colorPrimaryDark">@color/primary</item>
+            <item name="colorAccent">@color/accent</item>
+            <item name="android:windowBackground">@color/white</item>
+            <item name="android:textColor">#000000</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="windowActionBarOverlay">true</item>
+            <item name="android:actionBarStyle">@style/CustomThereActionBar</item>
+        </style>
+
+        <style name="CustomThereActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+            <item name="android:textSize">24sp</item>
+            <!--<item name="homeAsUpIndicator">@drawable/ic_home_up</item>-->
+
+        </style>
+
+        <style name="BasicButton" parent="Widget.AppCompat.Button">
+            <item name="android:background">@drawable/basic_button</item>
+        </style>
+
+       <style name="Checkbox" parent="Material.Drawable.CheckBox">
+           <item name="android:shape">oval</item>
+           <item name="cbd_strokeColor">@color/accent</item>
+           <item name="cbd_tickColor">@color/dark</item>
+           <item name="cbd_animDuration">5</item>
+           <item name="cbd_height">10dp</item>
+           <item name="cbd_width">10dp</item>
+       </style>
+
+        <style name="SplashTheme" parent="AppTheme">
+            <item name="android:windowBackground">@drawable/splash</item>
+        </style>
+
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/blue_grey_500</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
