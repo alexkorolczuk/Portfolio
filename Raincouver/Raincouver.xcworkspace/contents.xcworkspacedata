@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Raincouver.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Raincouver"
+      name = "Raincouver">
+      <FileRef
+         location = "group:Raincouver/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Raincouver/NowViewController.swift">
+      </FileRef>
+      <Group
+         location = "group:Raincouver"
+         name = "Main.storyboard">
+         <FileRef
+            location = "group:Raincouver/Base.lproj/Main.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Raincouver/Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:Raincouver"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:Raincouver/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Raincouver/Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:Raincouver/NowDataModel.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Raincouver/LocationManager.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Raincouver/FutureViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Raincouver/FutureDataModel.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
