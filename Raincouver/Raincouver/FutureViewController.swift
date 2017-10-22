@@ -34,17 +34,14 @@ class FutureViewController: UIViewController {
             self.updateUI()
         }
         
-        // Momo add. For draw a circle
         drawCircle()
         drawLine()
         
-        // Change order of views
         self.view.bringSubview(toFront: rain3HoursImage)
         self.view.bringSubview(toFront: rain6HoursImage)
         self.view.bringSubview(toFront: rain9HoursImage)
         self.view.bringSubview(toFront: rain12HoursImage)
         
-        // Change order of views
         self.view.bringSubview(toFront: time3HoursLabel)
         self.view.bringSubview(toFront: time6HoursLabel)
         self.view.bringSubview(toFront: time9HoursLabel)
@@ -69,18 +66,13 @@ class FutureViewController: UIViewController {
     func updateUI() {
         let timeLabels:[UILabel] = [time3HoursLabel, time6HoursLabel,time9HoursLabel, time12HoursLabel]
         
-        // Momo add.
         let weatherImages:[UIImageView] = [rain3HoursImage, rain6HoursImage,rain9HoursImage, rain12HoursImage]
 
-        // Momo add. Put an icon rain / no rain
         for (index, _) in weather.weatherConditions.enumerated() {
             if checkIdForRain(id: weather.weatherConditions[index]) == true {
                 weatherImages[index].image = UIImage(named: "iconSmallOpenUmbrella.png")
-                print("rain!")
-                print(weather.weatherConditions[index])
             } else {
                 weatherImages[index].image = UIImage(named: "iconSmallCloseUmbrella.png")
-                print("not rain!")
             }
         }
         
@@ -96,11 +88,9 @@ class FutureViewController: UIViewController {
         assignbackground()
     }
     
-    // Momo add. For bg image
     func assignbackground(){
         var background: UIImage!
         
-        // Momo add. NEED TO FIX about logic///////////////////////////////////////////
         for (index, _) in weather.weatherConditions.enumerated() {
             if checkIdForRain(id: weather.weatherConditions[index]) == true {
                 background = UIImage(named: "bgRain.png")!
@@ -121,7 +111,6 @@ class FutureViewController: UIViewController {
         self.view.sendSubview(toBack: imageView)
     }
     
-    // Momo add. Draw a circle.
     func drawCircle(){
         let circle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 300.0, height: 300.0))
         circle.center = self.view.center
@@ -134,7 +123,6 @@ class FutureViewController: UIViewController {
         self.view.sendSubview(toBack: circle)
     }
     
-    // Momo add. Draw lines inside a circle.
     func drawLine(){
         let line1 = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 300.0, height: 1.0))
         line1.center = self.view.center

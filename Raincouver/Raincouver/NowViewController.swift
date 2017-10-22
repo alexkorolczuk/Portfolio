@@ -55,27 +55,16 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
-//        // current time:
-//        let formatter = DateFormatter()
-//        formatter.timeStyle = .short
-//
-//        formatter.dateStyle = .none
-//        let time = formatter.string(from: Date())
-//        print(time)
-        
-        // Momo add. For draw a circle
+
         drawCircle()
         
-        // Momo add. For Order of views.
         self.view.bringSubview(toFront: weatherImage)
         self.view.bringSubview(toFront: tempLabel)
     }
     
-    // Momo add. For bg image
     func assignbackground(){
         var background: UIImage!
         
-        // Momo add.
         if checkIdForRain(id: weather.weather) == true {
             background = UIImage(named: "bgRain.png")!
         } else{
@@ -105,7 +94,6 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
         tempLabel.text = "\(weather.temp)"
         locationLabel.text = weather.location
         
-        // Momo add.
         if checkIdForRain(id: weather.weather) == true {
             weatherImage.image =  UIImage(named: "iconOpenUmbrella.png")
         } else{
@@ -115,7 +103,6 @@ class NowViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    // Momo add. For draw a circle
     func drawCircle(){
         let circle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 150.0, height: 150.0))
         circle.center = self.view.center

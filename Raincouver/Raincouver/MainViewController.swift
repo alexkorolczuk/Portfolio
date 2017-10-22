@@ -33,11 +33,6 @@ extension MainViewController: CLLocationManagerDelegate {
             manager.requestLocation()
         }
     }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let userLocation = locations.first {
-            
-        }
-    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         

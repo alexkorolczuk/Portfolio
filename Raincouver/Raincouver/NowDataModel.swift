@@ -11,17 +11,6 @@ import Alamofire
 
 
 class NowDataModel {
-    // empty data model object:
-    
-    
-    // data  seperated from API call
-    
-    //1 api class with 2 methods.->
-    // results from 1 method  -> data model
-    // first view controller -> api  -> data model -> view controller.
-    
-    //1 api, 2. data model, 3 view controller.
-    
     
     private var _date: Double?
     private var _temp: String?
@@ -30,10 +19,8 @@ class NowDataModel {
     var _lat: Double = 0
     var _long: Double = 0
     typealias JSONStandard  = Dictionary<String, AnyObject>
-    // viewconteoller.location.coordiate.location
     
     
-    // error handling in case nil:
     var date: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = .none
@@ -62,14 +49,12 @@ class NowDataModel {
         address = address + "&APPID=2b4f4a5f48466e99d8a1f24f3a906eaf"
         print(address)
         
-        //   + "api.openweathermap.org/data/2.5/forecast?lat={" + self._lat + "}&lon={" + self._long + "}"
         return address
     }
     var url:URL {
         return URL(string: address)!
     }
     
-    //using pod to get jason data and put them into DataModel obj
     func downloadData(completed: @escaping ()-> ()) {
         
         Alamofire.request(url).responseJSON(completionHandler: {

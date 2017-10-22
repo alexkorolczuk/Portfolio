@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 class FutureDataModel {
-    // empty data model object:
     
     private var _weatherConditions: [Int] = []
     private var _timeFrames: [Double] = []
@@ -19,7 +18,6 @@ class FutureDataModel {
     typealias JSONStandard  = Dictionary<String, AnyObject>
     
 
-    //getter for private variables
     var weatherConditions: [Int] {
         return _weatherConditions
     }
@@ -33,7 +31,6 @@ class FutureDataModel {
         address = address + "&lon="
         address = address + String(describing: _long)
         let finalAddress = address + "&APPID=2b4f4a5f48466e99d8a1f24f3a906eaf"
-        print("This is final address: \(finalAddress)")
         return URL(string: finalAddress)!
     }
   
@@ -43,8 +40,8 @@ class FutureDataModel {
             response in
             let result = response.result
             
-            if let dict = result.value as? JSONStandard, // whole JSON code.
-                let list = dict["list"] as? [JSONStandard], // first key from dict. LIST - array
+            if let dict = result.value as? JSONStandard,
+                let list = dict["list"] as? [JSONStandard], 
                 let data_3hours = list[0] as? JSONStandard,
                 let weather3hours = data_3hours["weather"] as? [JSONStandard],
                 let id_3 = weather3hours[0]["id"] as? Int,
