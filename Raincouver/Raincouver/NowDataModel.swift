@@ -19,6 +19,8 @@ class NowDataModel {
     var _lat: Double = 0
     var _long: Double = 0
     typealias JSONStandard  = Dictionary<String, AnyObject>
+   
+
     
     
     var date: String {
@@ -42,13 +44,11 @@ class NowDataModel {
     }
     
     var address: String {
-        var address = "http://" + "api.openweathermap.org/data/2.5/weather?lat="
-        address = address + String(describing: _lat)
-        address = address + "&lon="
-        address = address + String(describing: _long)
-        address = address + "&APPID=2b4f4a5f48466e99d8a1f24f3a906eaf"
+        let key = KeyAPI().key
+        var address = "http://" + "api.openweathermap.org/data/2.5/weather?lat=" + String(describing: _lat)
+        address = address + "&lon=" + String(describing: _long)
+        address = address + "&APPID=" + key
         print(address)
-        
         return address
     }
     var url:URL {

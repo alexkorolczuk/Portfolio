@@ -17,6 +17,7 @@
 		D174B6611F7D9FE30008F637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D174B65F1F7D9FE30008F637 /* Main.storyboard */; };
 		D174B6631F7D9FE30008F637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D174B6621F7D9FE30008F637 /* Assets.xcassets */; };
 		D174B6661F7D9FE30008F637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D174B6641F7D9FE30008F637 /* LaunchScreen.storyboard */; };
+		D1DC913C1F9E6E1C0080B6B0 /* KeyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC913B1F9E6E1C0080B6B0 /* KeyAPI.swift */; };
 		D1EC58FE1F801D18003CCD07 /* NowDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC58FD1F801D18003CCD07 /* NowDataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		D174B6621F7D9FE30008F637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D174B6651F7D9FE30008F637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D174B6671F7D9FE30008F637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DC913B1F9E6E1C0080B6B0 /* KeyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyAPI.swift; sourceTree = "<group>"; };
 		D1EC58FD1F801D18003CCD07 /* NowDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowDataModel.swift; sourceTree = "<group>"; };
 		F9B75983576869AC3A51B589 /* Pods_Raincouver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raincouver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				D16EC8A61F83FB9800AEEA0E /* FutureViewController.swift */,
 				D16EC8A81F83FBC200AEEA0E /* FutureDataModel.swift */,
 				D10AA1CB1F86BAC100D69D0B /* MainViewController.swift */,
+				D1DC913B1F9E6E1C0080B6B0 /* KeyAPI.swift */,
 			);
 			path = Raincouver;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				D174B65C1F7D9FE30008F637 /* AppDelegate.swift in Sources */,
 				D16EC8A71F83FB9800AEEA0E /* FutureViewController.swift in Sources */,
 				D16EC8A91F83FBC200AEEA0E /* FutureDataModel.swift in Sources */,
+				D1DC913C1F9E6E1C0080B6B0 /* KeyAPI.swift in Sources */,
 				D1EC58FE1F801D18003CCD07 /* NowDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

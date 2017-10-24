@@ -26,12 +26,12 @@ class FutureDataModel {
     }
 
     var url: URL {
-        var address = "http://" + "api.openweathermap.org/data/2.5/forecast?lat="
-        address = address + String(describing: _lat)
-        address = address + "&lon="
-        address = address + String(describing: _long)
-        let finalAddress = address + "&APPID=2b4f4a5f48466e99d8a1f24f3a906eaf"
-        return URL(string: finalAddress)!
+        let key = KeyAPI().key
+        var address = "http://" + "api.openweathermap.org/data/2.5/forecast?lat=" + String(describing: _lat)
+        address = address + "&lon=" + String(describing: _long)
+        address =  address + "&APPID=" + key
+        
+        return URL(string: address)!
     }
   
     func downloadData(completed: @escaping ()-> ()) {

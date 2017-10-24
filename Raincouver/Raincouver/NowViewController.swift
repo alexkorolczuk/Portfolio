@@ -11,9 +11,11 @@ import CoreLocation
 
 class NowViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var showFutureButton: UIButton!
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    
     
     var weather = NowDataModel()
     let locationManager = CLLocationManager()
